@@ -1,0 +1,160 @@
+<link href="styles.css" />
+<html>
+<head>
+</head>
+<body>
+  <div>
+    <h1 id="title">Pandemic Ice Breakers Survey</h1>
+    <p id="description">Please introduce yourself and make some odd choices!</p>
+  <form id="survey-form">
+    <div class="form-group">
+      <label id="name-label" for="name">Name</label>
+      <input 
+             type="text" 
+             name="name" 
+             id="name" 
+             class="form-control" 
+             placeholder="Enter your name" 
+             required/>
+    </div>
+    <div class="form-group">
+      <label id="email-label" for="name">Email</label>
+      <input 
+             type="email" 
+             name="email" 
+             id="email" 
+             class="form-control" 
+             placeholder="Enter your Email" 
+             required/>
+    </div>
+      <div class="form-group">
+        <label id="number-label" for="number">Age</label>
+        <input 
+               type="number" 
+               name="age" 
+               id="number" 
+               min="10" 
+               max="199" 
+               class="form-control" 
+               placeholder="99"/>
+    </div>
+     <div class="form-group">
+      <p>Which option best describes your current role?</p>
+      <select 
+              id="dropdown" 
+              name="role" 
+              class="form-control" 
+              required>
+        <option disabled selected value>Select current role</option>
+        <option value="student">Student</option>
+        <option value="job">Full Time Job</option>
+        <option value="learner">Full Time Learner</option>
+        <option value="preferNo">Prefer not to say</option>
+        <option value="other">Other</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <p>Do you think pineapple belongs on pizza?</p>
+      <label><input
+          name="user-recommend"
+          value="yes"
+          type="radio"
+          class="input-radio"/>Yes</label>
+      <label><input
+          name="user-recommend"
+          value="maybe"
+          type="radio"
+          class="input-radio"
+          checked/>Maybe</label>
+      <label><input
+          name="user-recommend"
+          value="no"
+          type="radio"
+          class="input-radio"/>No</label>
+      <label><input
+          name="user-recommend"
+          value="anything-goes"
+          type="radio"
+          class="input-radio"/>Anything goes</label>
+    </div>
+    <div class="form-group">
+      <p>Which ice cream flavour best represents you?</p>
+      <select 
+              id="most-like" 
+              name="mostLike" 
+              class="form-control" required>
+        <option disabled selected value>Select an option</option>
+        <option value="vanilla">Vanilla</option>
+        <option value="chocolate">Chocolate</option>
+        <option value="strawberry">Strawberry</option>
+        <option value="pistachio">Pistachio</option>
+        <option value="rockroad">Rocky Road</option>
+        <option value="caramel">Caramel</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <p>What have you done since the pandemic?<span class="clue">(Check all that apply)</span></p>
+      <label><input
+          name="prefer"
+          value="read-a-book"
+          type="checkbox"
+          class="input-checkbox"/>Read a book</label>
+      <label><input
+          name="prefer"
+          value="watched-a-movie"
+          type="checkbox"
+          class="input-checkbox"/>Watched a movie</label>
+      <label><input
+          name="prefer"
+          value="ordered-takeout"
+          type="checkbox"
+          class="input-checkbox"/>Ordered takeout</label>
+      <label><input
+          name="prefer"
+          value="completed-a-video-game"
+          type="checkbox"
+          class="input-checkbox"/>Completed a video game</label>
+      <label><input
+          name="prefer"
+          value="travelled-domestically"
+          type="checkbox"
+          class="input-checkbox"/>Travelled domestically</label>
+      <label><input
+          name="prefer"
+          value="travelled-internationally"
+          type="checkbox"
+          class="input-checkbox"/>Travelled internationally</label>
+      <label><input
+          name="prefer"
+          value="renovated"
+          type="checkbox"
+          class="input-checkbox"/>Renovated</label>
+      <label><input
+          name="prefer"
+          value="setup-a-home-office"
+          type="checkbox"
+          class="input-checkbox"/>Setup a home office</label>
+      <label><input
+          name="prefer"
+          value="taken-a-course"
+          type="checkbox"
+          class="input-checkbox"/>Taken a course</label>
+    </div>
+    <div class="form-group">
+      <p>What is your most used lifehack?</p>
+      <textarea
+        id="lifehacks"
+        class="input-textarea"
+        name="lifehacks"
+        placeholder="Share your secrets here..."></textarea>
+    </div>
+    <div class="form-group">
+      <button 
+              type="submit" 
+              id="submit" 
+              class="submit-button">Submit</button>
+    </div>
+  </form>
+  </div>
+</body>
+</html>
